@@ -1,0 +1,6 @@
+# Wakesurf Tracker — build configuration
+# Defaults already point resources -> resources/ and source -> source/,
+# but we set them explicitly for clarity.
+project.manifest = manifest.xml
+base.sourcePath = source
+base.resourcePath = resources

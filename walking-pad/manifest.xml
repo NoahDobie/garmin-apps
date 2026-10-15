@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Walking Pad — Connect IQ manifest.
+    The application id below is a random GUID, fine for personal sideloading.
+-->
+<iq:manifest xmlns:iq="http://www.garmin.com/xml/connectiq" version="3">
+  <iq:application id="ea40fef434dd4adc97b8236af93ea1fd" type="watch-app" name="@Strings.AppName" entry="WalkingPadApp" launcherIcon="@Drawables.LauncherIcon" minApiLevel="3.2.0">
+    <iq:products>
+      <iq:product id="fr255"/>
+    </iq:products>
+    <!-- Fit/FitContributor: record the activity + custom fields.
+             Sensor: heart rate (drives calories). No GPS — it's indoors. -->
+    <iq:permissions>
+      <iq:uses-permission id="Fit"/>
+      <iq:uses-permission id="FitContributor"/>
+      <iq:uses-permission id="Sensor"/>
+    </iq:permissions>
+    <iq:languages>
+      <iq:language>eng</iq:language>
+    </iq:languages>
+    <iq:barrels/>
+  </iq:application>
+</iq:manifest>

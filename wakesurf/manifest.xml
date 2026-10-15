@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Wakesurf Tracker — Connect IQ manifest.
+    The application id below is a placeholder GUID. It is fine for personal
+    sideloading; if you later publish to the store, VS Code's
+    "Monkey C: Edit Application Id" command will assign a real one.
+-->
+<iq:manifest xmlns:iq="http://www.garmin.com/xml/connectiq" version="3">
+  <iq:application id="d3b07384d113edec49eaa6238ad5ff00" type="watch-app" name="@Strings.AppName" entry="WakesurfApp" launcherIcon="@Drawables.LauncherIcon" minApiLevel="3.2.0">
+    <!-- Devices this build targets. Add more product ids to support more watches. -->
+    <iq:products>
+      <iq:product id="fr255"/>
+    </iq:products>
+    <!-- Positioning: GPS speed + distance (drives auto run detection).
+             Sensor: heart rate. FitContributor: custom FIT fields (run count, etc.). -->
+    <iq:permissions>
+      <iq:uses-permission id="Fit"/>
+      <iq:uses-permission id="FitContributor"/>
+      <iq:uses-permission id="Positioning"/>
+      <iq:uses-permission id="Sensor"/>
+    </iq:permissions>
+    <iq:languages>
+      <iq:language>eng</iq:language>
+    </iq:languages>
+    <iq:barrels/>
+  </iq:application>
+</iq:manifest>
